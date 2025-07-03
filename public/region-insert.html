@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Database Application</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img id="logo" class="bclogo" src="logo.png" alt="logo..."></a>
+        <nav class="navbar">
+            <a href="main.html">Trails</a>
+            <a href="regions.html">Regions</a>
+            <a href="groups.html">Groups</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <div class="container-wrapper">
+        <div class="container">
+            <h2>View Region</h2>
+            <table id="regiontable" border="1">
+                <thead>
+                    <tr>
+                        <th>RegionID</th>
+                        <th>TerrainType</th>
+                        <th>City</th>
+                        <th>EmergencyPhone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <h2>Insert Region</h2>
+            <form id="insertRegion">
+                RegionID: <input type="number" id="regionInsertRegionId" placeholder="Enter Region ID" required>
+                <br><br>
+                Terrain Type: <input type="text" id="regionInsertTerrain" placeholder="Enter Terrain Type"
+                    maxlength="50">
+                <br><br>
+                City: <input type="text" id="regionInsertCity" placeholder="Enter City" maxlength="50">
+                <br><br>
+                Emergency Phone: <input type="text" id="regionInsertPhone" placeholder="Enter Phone" maxlength="13">
+                <br><br>
+                <button type="submit"> insert </button> <br>
+            </form>
+            <div class="result-box">
+                <div class="result-label">Status</div>
+                <div id="insertRegionMessage"></div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+</body>
+
+</html>
